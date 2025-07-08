@@ -1,5 +1,5 @@
 # Model Loading Configs
-model_path: /inspire/hdd/global_user/liupengfei-24025/global/rzfan/models/Llama-3.3-70B-Instruct
+model_path: /inspire/hdd/global_user/liupengfei-24025/rzfan/models/Llama-3.3-70B-Instruct
 tp_size: 4
 
 # Sampling Configs
@@ -12,11 +12,11 @@ N_NODES: 1
 NODE_GPUS: 8
 
 # Data Configs
-data_path: /inspire/hdd/global_user/liupengfei-24025/global/rzfan/MegaScience/data_process/data/documents/examples.jsonl
-prompt_path: /inspire/hdd/global_user/liupengfei-24025/global/rzfan/MegaScience/data_process/vllm_inference/prompt/qa_extraction_chemistry_low_standard.prompt
+data_path: /inspire/hdd/global_user/liupengfei-24025/rzfan/MegaScience/data_process/data/documents/examples.jsonl
+prompt_path: /inspire/hdd/global_user/liupengfei-24025/rzfan/MegaScience/data_process/vllm_inference/prompt/qa_extraction_chemistry_low_standard.prompt
 data_format: jsonl
 
 # Save configs
-save_path: /inspire/hdd/global_user/liupengfei-24025/global/rzfan/MegaScience/data_process/data/extract_qa/original_qa
+save_path: /inspire/hdd/global_user/liupengfei-24025/rzfan/MegaScience/data_process/data/extract_qa/original_qa
 save_name: extract_qa_biology
 save_interval: 64

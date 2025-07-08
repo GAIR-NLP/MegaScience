@@ -2,17 +2,16 @@
 # sudo apt update
 # sudo apt install yq -y
 
-chmod +x /inspire/hdd/global_user/liupengfei-24025/global/rzfan/yq_linux_amd64
-cp -r /inspire/hdd/global_user/liupengfei-24025/global/rzfan/yq_linux_amd64 /usr/local/bin/yq
+chmod +x /inspire/hdd/global_user/liupengfei-24025/rzfan/yq_linux_amd64
+cp -r /inspire/hdd/global_user/liupengfei-24025/rzfan/yq_linux_amd64 /usr/local/bin/yq
 yq --version
 
 # setup env
-export PATH="/inspire/hdd/global_user/liupengfei-24025/global/rzfan/miniconda3/bin:$PATH"
+export PATH="/inspire/hdd/global_user/liupengfei-24025/rzfan/miniconda3/bin:$PATH"
 source activate factory
-cd /inspire/hdd/global_user/liupengfei-24025/global/rzfan/vllm_inference
 
 # extract NNODE and NGPU from yaml
-export yaml_path=/inspire/hdd/global_user/liupengfei-24025/global/rzfan/vllm_inference/task_config/extract_reference_answer/biology_extract_reference_answer.yaml
+export yaml_path=./vllm_inference/task_config/extract_qa.yaml
 
 export NNODE=$(yq eval '.N_NODES' $yaml_path)
 export NGPU=$(yq eval '.NODE_GPUS' $yaml_path)
@@ -35,7 +34,7 @@ for i in \$(seq 0 \$((${NUM_TASKS}-1))); do
     MASTER_PORT=${MASTER_PORT} \\
     START_GPU=\$((i * \$tp)) \\
     CUDA_VISIBLE_DEVICES=\$(seq -s, \$START_GPU \$((START_GPU+\$tp-1))) \\
-    /inspire/hdd/global_user/liupengfei-24025/global/rzfan/miniconda3/envs/factory/bin/python extract_reference_answer.py \\
+    /inspire/hdd/global_user/liupengfei-24025/rzfan/miniconda3/envs/factory/bin/python extract_reference_answer.py \\
         --config_path ${yaml_path} \\
         > ${logging_dir}/${save_name}/\${SLURM_NODEID}_\${i}.log 2>&1 &
 done
