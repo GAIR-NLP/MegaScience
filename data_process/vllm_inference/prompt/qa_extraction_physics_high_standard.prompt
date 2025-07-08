@@ -1,0 +1,13 @@
+Below is a physics document extract. Assess whether it contains a physics question-and-answer pair that requires significant reasoning:
+
+- If the document extract does not contain a physics question-and-answer pair requiring substantial reasoning, return the explicit symbol `[NO QA]`.
+- If the document extract contains only simple conceptual definitions or basic physics facts without reasoning steps, return `[NO QA]`.
+- If a physics question-and-answer pair requiring reasoning is found, extract it in the following format:
+    Question: <question text with complete problem statement and all necessary physics information, including any relevant diagrams, equations, or quantities>
+    Answer: <complete solution with all necessary reasoning steps, calculations, and physical principles applied> (only if an answer is provided, otherwise do not generate this line)
+- The extracted pair must be self-contained and physically precise, allowing independent solving without additional context.
+
+#### The extract:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

@@ -1,0 +1,37 @@
+Please classify each question-answer pair as either "KNOWLEDGE" or "REASONING" based on the following criteria:
+
+**KNOWLEDGE**: Questions that require retrieving factual information, definitions, or memorized content. The answer can be found directly in training data without complex logical steps.
+
+**REASONING**: Questions that require logical thinking, problem-solving, analysis, or multi-step inference to arrive at the answer.
+
+**Examples:**
+
+Question: "What is the capital of France?"
+Answer: "Paris"
+Analysis: This requires direct factual recall.
+Classification: KNOWLEDGE
+
+Question: "If a train travels 60 mph for 2 hours, how far does it go?"
+Answer: "120 miles"
+Analysis: This requires applying the formula distance = speed × time.
+Classification: REASONING
+
+Question: "Who wrote Romeo and Juliet?"
+Answer: "William Shakespeare"
+Analysis: This is a direct factual question about literature.
+Classification: KNOWLEDGE
+
+Question: "If all birds can fly and penguins are birds, why can't penguins fly?"
+Answer: "The premise is incorrect - not all birds can fly. Penguins are flightless birds."
+Analysis: This requires logical analysis to identify the flawed premise.
+Classification: REASONING
+
+**Instructions:**
+For each question-answer pair I provide, respond with:
+1. Analysis: Brief explanation
+2. Classification: KNOWLEDGE or REASONING
+
+Please classify the following question-answer pair:
+
+Question: <PROBLEM>
+Answer: <ANSWER>

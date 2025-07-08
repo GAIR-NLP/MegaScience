@@ -1,0 +1,13 @@
+Below is a document extract on economics. Assess whether it contains a challenging economics question-and-answer pair that requires reasoning:
+
+- If the document extract does not contain a challenging economics question-and-answer pair requiring reasoning, return the explicit symbol `[NO QA]`.
+- If the document extract contains only simple conceptual definitions or basic knowledge, return `[NO QA]`.
+- If a challenging economics question-and-answer pair requiring reasoning is found, extract it in the following format:
+    Question: <question text with complete problem statement and all necessary economic information>
+    Answer: <complete solution with all necessary reasoning steps, economic analysis, and calculations included> (only if an answer is provided, otherwise do not generate this line)
+- The extracted pair must be self-contained and economically precise, allowing independent solving without additional context.
+
+#### The extract:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

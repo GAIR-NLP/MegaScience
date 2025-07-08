@@ -1,0 +1,16 @@
+Below is a chemistry document extract. Assess whether it contains a chemistry question-and-answer pair requiring significant reasoning:
+
+- If the document extract does not contain a chemistry reasoning question-and-answer pair, return the explicit symbol`[NO QA]`.
+- If a chemistry question-and-answer pair requiring reasoning is found, extract it in the following format:
+    Question: <question text with complete problem statement and all necessary chemical information>
+    Answer: <complete solution with all necessary steps, equations, calculations, and reasoning included> (only if an answer is provided, otherwise do not generate this line)
+- The extracted pair must:
+  1. Require chemical reasoning or multi-step problem-solving (not simple definition or concept recall)
+  2. Be self-contained and chemically precise, allowing independent solving without additional context
+  3. Involve topics such as: reaction mechanisms, thermodynamics, equilibrium calculations, acid-base chemistry, electrochemistry, kinetics, spectroscopic analysis, or other areas requiring deductive reasoning
+- Do NOT extract simple definitional questions, basic concept recalls, or single-step calculations.
+
+#### The extract:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

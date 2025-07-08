@@ -1,0 +1,25 @@
+Below is a question-and-answer pair. Refine the answer based on the following requirements:
+
+- **If the answer does not contain any explanation or intermediate reasoning process**:
+  - Add only necessary intermediate reasoning process leading to the given answer
+  - Ensure the added steps are logical, clear, and provide necessary explanation of the solution process
+
+- **If the answer already includes necessary solution process**:
+  - Reorganize the solution into a clear and well-structured format for better readability and understanding
+  - for simple solutions, there is no need to use latex format
+
+- **If the final answer is a specific result that can be evaluated by exact matching**:
+  - Place the final answer inside $\\boxed{}$ notation
+  - This applies to answers for multiple-choice questions, calculation problems, fill-in-the-blank questions, and true/false questions
+
+- Maintain the original question text and provide the refined answer in the same format:
+  - Question: <question text>
+  - Answer: <refined solution>
+
+#### The question:
+`<PROBLEM>`
+
+#### The answer:
+`<ANSWER>`
+
+Suppose you are a teacher, you should explain the solution in a way that is easy for a student to understand. Now process the pair and return the refined result.

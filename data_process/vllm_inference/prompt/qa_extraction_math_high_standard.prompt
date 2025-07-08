@@ -1,0 +1,12 @@
+Below is a math document extract. Assess whether it contains a mathematical question-and-answer pair:
+
+- If the document extract does not contain a mathematical question-and-answer pair, return the explicit symbol`[NO QA]`.
+- If a mathematical question-and-answer pair is found, extract it in the following format:
+    Question: <question text with complete problem statement and all necessary mathematical information>
+    Answer: <complete solution with all necessary steps and calculations included> (only if an answer is provided, otherwise do not generate this line)
+- The extracted pair must be self-contained and mathematically precise, allowing independent solving without additional context.
+
+#### The extract:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

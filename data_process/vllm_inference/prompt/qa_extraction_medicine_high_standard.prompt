@@ -1,0 +1,14 @@
+Below is a medical document extract. Assess whether it contains a medical question-and-answer pair that requires clinical reasoning:
+
+- If the document extract does not contain a medical reasoning question-and-answer pair, return the explicit symbol `[NO QA]`.
+- If a medical reasoning question-and-answer pair is found, extract it in the following format:
+    Question: <question text with complete clinical scenario and all necessary patient information>
+    Answer: <complete solution with diagnostic reasoning, differential diagnoses, management plan, and treatment rationale> (only if an answer is provided, otherwise do not generate this line)
+- Only extract complex questions requiring clinical reasoning, diagnosis, or treatment planning. Do not extract simple factual or concept-based questions.
+- The extracted pair must be self-contained and medically precise, allowing independent assessment without additional context.
+- Focus on cases requiring differential diagnosis, interpretation of lab results, management decisions, or therapeutic reasoning.
+
+#### The extract:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

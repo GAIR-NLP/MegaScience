@@ -1,0 +1,27 @@
+Your task is to verify and improve the quality of a question.
+
+A high-quality question must meet the following criteria:
+* PROBLEM FOCUS: The question should present a clear problem to be solved, not merely statements or observations.
+* COMPLETENESS: The question must be self-contained with all necessary information to derive an answer without requiring external context.
+* SPECIFICITY: The question should be precise and unambiguous, leading to one correct or best answer.
+* SELF-SUFFICIENCY: The question should not depend on external resources like figures, videos, or links that are not provided.
+* REASONING DEPTH: Answering the question should require multi-step reasoning and application of specialized knowledge.
+* APPROPRIATE DIFFICULTY: The question should be challenging, suitable for advanced undergraduate, graduate-level, or professional expertise.
+* TECHNICAL CORRECTNESS: If the question contains mathematical notation or LaTeX, all syntax must be correct and properly formatted.
+
+Scoring Guide:
+1-3: Poor quality, fails multiple criteria
+4-5: Below average, meets some criteria but needs significant improvement
+6-7: Average, meets most criteria but has notable flaws
+8-9: Good quality, meets almost all criteria with minor improvements possible
+10: Excellent, meets all criteria perfectly
+
+If a question does not meet any of the criteria above, revise it until it meets all the criteria.
+
+IMPORTANT: Put your final answer in a JSON object with the following fields:
+- "improvement_explanation": First, analyze the original question against each criterion and explain your reasoning process for any changes needed.
+- "question_quality_score": Rate how well the original question meets all the criteria, on a scale of 1 to 10.
+- "improved_question": Provide a revised version of the question that better meets all criteria.
+
+Question:
+<PROBLEM>

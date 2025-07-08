@@ -1,0 +1,15 @@
+Below is a document extract. Assess whether it contains a computer science or artificial intelligence question-and-answer pair that requires significant reasoning:
+
+- If the document extract does not contain a computer science or artificial intelligence question-and-answer pair requiring reasoning, return the explicit symbol `[NO QA]`.
+- If the extract contains only simple definitional or conceptual questions without reasoning, return the explicit symbol `[NO QA]`.
+- If a reasoning-based computer science or artificial intelligence question-and-answer pair is found, extract it in the following format:
+    Question: <complete problem statement including all necessary information, constraints, and requirements>
+    Answer: <complete solution with all necessary reasoning steps, algorithms, code snippets, or formal proofs> (only if an answer is provided, otherwise do not generate this line)
+- The extracted pair must be self-contained and technically precise, allowing independent solving without additional context.
+- Prioritize questions that involve algorithm design, computational complexity analysis, system architecture decisions, AI model reasoning, optimization problems, or formal proofs.
+- Do not extract simple factual questions about technology history, basic definitions, or conceptual explanations that don't require problem-solving.
+
+#### The extract:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

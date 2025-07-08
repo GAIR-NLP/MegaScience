@@ -1,0 +1,33 @@
+Below is a book document extract.
+
+# Extraction Task
+Extract complete, independently solvable computer science and artificial intelligence questions and answers from the document while following these guidelines:
+
+## For Questions/Problems:
+- Extract any explicit computer science or AI questions with their provided answers
+- For implicit problems (algorithms, data structures, programming concepts, AI theories, computational theorems, or technical definitions presented as statements), convert them to well-formed questions ONLY if they can stand alone as complete problems
+- Ensure each extracted problem contains ALL necessary information to be solved independently without requiring additional context
+- Include all context, requirements, constraints, and examples needed to understand the problem
+- For computational problems, make sure the question includes all necessary inputs, expected outputs, and constraints
+- Extract multiple problems separately if they exist
+- If no computer science or AI content can be extracted as complete questions, return `[NO QA]`
+
+## For Answers:
+- Include the complete answer as provided in the extract
+- Answers should contain the main solution or explanation
+- If available, include:
+  * Code implementations
+  * Time/space complexity analysis
+  * Step-by-step explanations
+  * Proofs for computational theorems
+  * Practical implementation details for AI concepts
+
+## Format:
+Format each question-answer pair as:
+Question: [Complete computer science/AI question with all context needed to solve]
+Answer: [Complete answer]
+
+The extract is as follows:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

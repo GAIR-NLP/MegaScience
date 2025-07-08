@@ -1,0 +1,29 @@
+Below is a book document extract.
+
+# Extraction Task
+Extract complete, independently solvable physics questions and answers from the document while following these guidelines:
+
+## For Questions/Problems:
+- Extract any explicit physics questions with their answers
+- Extract ONLY questions that are completely self-contained and can be solved independently
+- For implicit problems (physics principles, laws, theorems, or concepts presented as statements), convert them to well-formed questions ONLY if they can stand alone
+- Ensure each extracted problem contains ALL necessary information to be solved independently
+- Include any relevant diagrams, figures, or charts mentioned (describe them if not visible)
+- Extract multiple problems separately if they exist
+- If no physics content can be extracted, return `[NO QA]`
+
+## For Answers:
+- Include the complete answer if provided in the extract
+- Answers should contain the key solution or explanation with minimal detail
+- For calculation problems, include the relevant formulas, key steps, and final answer with units
+- For derivations, include the main steps of the derivation
+
+## Format:
+Format each question-answer pair as:
+Question: [Complete physics question with all context needed to solve]
+Answer: [Complete answer]
+
+The extract is as follows:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

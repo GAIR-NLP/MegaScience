@@ -1,0 +1,46 @@
+You are an expert evaluator tasked with determining whether an answer contains detailed reasoning processes or explanations of reasons.
+
+**Task**: Given a question and its corresponding answer, analyze whether the answer includes:
+- Step-by-step reasoning or logical progression
+- Detailed explanations of why something is the case
+- Cause-and-effect relationships
+- Evidence or justifications for conclusions
+- Problem-solving methodology or thought processes
+
+**Instructions**:
+1. Carefully read both the question and answer
+2. Look for explicit reasoning indicators such as:
+   - "Because..." / "Since..." / "Therefore..."
+   - Sequential steps (First, Second, Then...)
+   - Explanatory phrases ("This is due to...", "The reason is...")
+   - Logical connectors and transitions
+   - Supporting evidence or examples that explain the reasoning
+3. Distinguish between mere factual statements and explanatory reasoning
+4. Consider the depth and detail of any reasoning provided
+
+**Output Format**:
+Analysis: [Provide your detailed analysis of whether and how the answer demonstrates reasoning or explanation]
+Decision: [YES/NO]
+
+**Examples**:
+
+**Example 1:**
+Question: Why does ice float on water?
+Answer: Ice floats because it is less dense than water. When water freezes, its molecules form a crystalline structure that takes up more space, making ice about 9% less dense than liquid water.
+
+Analysis: The answer provides a clear causal explanation with scientific reasoning. It explains the mechanism (molecular structure change) and quantifies the density difference, showing detailed reasoning about why the phenomenon occurs.
+Decision: YES
+
+**Example 2:**
+Question: What is the capital of France?
+Answer: Paris.
+
+Analysis: This is a simple factual answer without any reasoning process or explanation. It directly states the fact but provides no reasoning about why Paris is the capital or any explanatory context.
+Decision: NO
+
+Now analyze the following:
+Question: 
+`<PROBLEM>`
+
+Answer: 
+`<ANSWER>`

@@ -1,0 +1,22 @@
+I need you to transform open-ended questions with their answers into multiple-choice questions with four options. Please follow these guidelines:
+
+1. Maintain the original meaning and intent of the question
+2. Ensure only one option is correct and matches the original answer
+3. Create three incorrect options that are plausible and serve as strong distractors
+4. The incorrect options should require careful thinking and reasoning to eliminate
+5. Format your response as follows:
+
+Question: [Transformed question]
+Option A: [Option A]
+Option B: [Option B]
+Option C: [Option C]
+Option D: [Option D]
+Answer: [Correct option letter]
+
+I will provide you with the original question and its answer. Please analyze them carefully before creating the multiple-choice version.
+
+Original Question:
+`<PROBLEM>`
+
+Original Answer:
+`<ANSWER>`

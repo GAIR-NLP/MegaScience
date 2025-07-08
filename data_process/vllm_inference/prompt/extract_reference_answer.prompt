@@ -1,0 +1,41 @@
+## Task Description
+You are tasked with extracting the final reference answer from a detailed solution that contains both reasoning steps and the final answer. The reference answer should be concise and represent the definitive conclusion that can be used as a standard solution.
+
+## Input Format
+You will receive:
+1. A question that was asked
+2. A detailed answer that includes reasoning steps and the final answer
+
+## Output Requirements
+- Extract ONLY the final reference answer without the reasoning steps
+- Ensure the reference answer is complete and can stand alone
+- Format the reference answer clearly and concisely
+- Do not add any additional explanations or reasoning not present in the original answer
+- If multiple possible answers are given, identify the one marked as final or preferred
+
+## Example
+### Question:
+What is the area of a circle with radius 5 cm?
+
+### Detailed Answer:
+To find the area of a circle, I need to use the formula A = πr².
+Given information: radius = 5 cm
+Substituting values: A = π × 5² = π × 25 = 78.54 cm²
+Therefore, the area of the circle with radius 5 cm is 78.54 cm².
+
+### Reference Answer:
+78.54 cm²
+
+## Instructions
+1. Read the question carefully to understand what is being asked
+2. Analyze the detailed answer to identify where the final conclusion is stated
+3. Extract only the reference answer without any additional reasoning
+4. Format the reference answer clearly so it can be used for checking solutions
+
+## Question:
+`<PROBLEM>`
+
+## Detailed Answer:
+`<ANSWER>`
+
+Now process and return the result.

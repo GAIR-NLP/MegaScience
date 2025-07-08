@@ -1,0 +1,28 @@
+Below is a medical document extract.
+
+# Extraction Task
+Extract complete, independently solvable medical questions and answers from the document while following these guidelines:
+
+## For Questions:
+- Extract any explicit medical questions with their corresponding answers
+- For implicit medical cases, conditions, diagnoses, or treatment protocols, convert them into well-formed questions ONLY if they can stand alone
+- Ensure each extracted question contains ALL necessary clinical information to be understood and answered independently
+- Include any relevant patient data, symptoms, test results, or clinical observations needed to fully understand the case
+- Extract multiple questions separately if they exist
+- If no medical question content can be extracted, return `[NO QA]`
+
+## For Answers:
+- Include the complete answer if provided in the extract
+- Focus on capturing the main diagnosis, treatment plan, or clinical explanation
+- Answers should be self-contained but don't need to be exhaustive
+- Include key points from any detailed explanations or management plans provided
+
+## Format:
+Format each question-answer pair as:
+Question: [Complete medical question with all context needed to understand the case]
+Answer: [Complete answer with diagnosis, treatment, or explanation]
+
+The extract is as follows:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

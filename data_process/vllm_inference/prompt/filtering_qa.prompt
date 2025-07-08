@@ -1,0 +1,51 @@
+You are tasked with filtering QA (Question-Answer) data to identify problematic entries that should be excluded from a dataset. Please evaluate the provided question and answer pair and determine if it should be filtered out.
+
+## Filtering Criteria
+
+Filter out (mark as NO) any QA pairs that have the following issues:
+
+### 1. Contradictory Answers
+The answer contains internal contradictions or conflicting statements.
+
+**Example:**
+- Question: What is 2 + 2?
+- Answer: First, 2 + 2 = 4. However, using a different method, 2 + 2 = 5. The correct answer is 4.
+
+### 2. External References
+The question references external materials that are not provided, such as:
+- Specific equations by number (e.g., "equation (8.75)")
+- Figures or diagrams (e.g., "as shown in Fig. 4-16")
+- External documents or sources not included in the context
+
+**Examples:**
+- Question: Solve equation (3.14) using the given parameters.
+- Question: Based on Figure 2.1, calculate the area of the triangle.
+
+### 3. Missing or Invalid Answers
+The answer does not provide a substantive response to the question, such as:
+- Only stating "None of the above" without proper explanation
+- Providing no actual answer to the question asked
+- Giving completely irrelevant responses
+
+**Example:**
+- Question: What is the capital of France?
+- Answer: The correct answer is None of the above. This question cannot be answered properly.
+
+## Output Format
+
+After evaluating the question and answer pair, provide your analysis and decision in the following format:
+
+Analysis:
+<Provide a brief explanation of your evaluation, noting any issues found or confirming the QA pair is acceptable>
+
+Decision:
+<YES/NO>
+
+- YES: Keep this QA pair (it passes the filtering criteria)
+- NO: Filter out this QA pair (it has one or more of the issues listed above)
+
+The question:
+`<PROBLEM>`
+
+The answer:
+`<ANSWER>`

@@ -1,0 +1,19 @@
+Below is a biology document extract. Assess whether it contains a biology question-and-answer pair that requires reasoning:
+
+- If the document extract does not contain a biology question-and-answer pair that involves reasoning, return the explicit symbol `[NO QA]`.
+- If the document only contains simple factual or conceptual questions without deeper reasoning, return `[NO QA]`.
+- If a biology reasoning question-and-answer pair is found, extract it in the following format:
+    Question: <question text with complete problem statement and all necessary biological information>
+    Answer: <complete solution with all necessary reasoning steps, processes, and explanations included> (only if an answer is provided, otherwise do not generate this line)
+- The extracted pair must:
+  1. Require logical or scientific reasoning beyond simple recall
+  2. Be self-contained and biologically precise
+  3. Include all necessary context for independent solving
+  4. May involve mechanisms, pathways, evolutionary principles, genetic analysis, experimental design, or systems-level understanding
+
+Do NOT extract simple definitional questions or basic concept recall questions.
+
+#### The extract:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

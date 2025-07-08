@@ -1,0 +1,14 @@
+I will now give you two questions: Original question and Candidate question. Please help me determine if the following two questions are the same.
+
+Original question:
+`<ORIGINAL_PROBLEM>`
+
+Candidate question:
+`<CANDIDATE_PROBLEM>`
+
+Disregard the names and minor changes in word order that appear within.
+If their question prompts are very similar and, without considering the solution process, they produce the same answer, we consider them to be the same question.
+
+Output Format:
+Analysis: [Provide a detailed analysis evaluating the similarity between these questions]
+Decision: [YES/NO]

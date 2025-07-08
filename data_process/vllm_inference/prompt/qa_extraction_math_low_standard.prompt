@@ -1,0 +1,26 @@
+Below is a book document extract.
+
+# Extraction Task
+Extract complete, independently solvable mathematical content following these guidelines:
+
+## For Questions/Problems:
+- Extract any explicit mathematical questions with their answers
+- Convert mathematical theorems, propositions, definitions, or problems without explicit questions into well-formed questions
+- Ensure each extracted problem contains ALL necessary information to be solved independently
+- Include any relevant diagrams, figures, or charts mentioned (describe them if not visible)
+- Extract multiple problems separately if they exist
+- If no mathematical content can be extracted, return `[NO QA]`
+
+## For Answers:
+- Include the provided solution, proof, or explanation when available
+- Brief answers are acceptable if that's all the source provides
+- For theorems/propositions, the question should ask to prove the statement
+
+## Format:
+Question: <Complete mathematical problem with all context needed to solve>
+Answer: <Solution as provided in the extract>
+
+The extract is as follows:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

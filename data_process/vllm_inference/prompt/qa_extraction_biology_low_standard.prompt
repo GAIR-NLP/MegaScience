@@ -1,0 +1,28 @@
+Below is a book document extract.
+
+# Extraction Task
+Extract complete, independently solvable biology questions and answers from the document while following these guidelines:
+
+## For Questions:
+- Extract any explicit biology questions with their associated answers
+- For implicit biology concepts, mechanisms, processes, or principles presented as statements, convert them to well-formed questions ONLY if they can stand alone
+- Ensure each extracted question contains ALL necessary information to be solved independently without requiring additional context
+- Include any relevant biological diagrams, pathways, or figures mentioned (describe them if not visible)
+- Extract multiple questions separately if they exist
+- If no biological content can be meaningfully extracted as a question, return `[NO QA]`
+
+## For Answers:
+- Include the answer provided in the extract
+- Answers should capture the essential explanation of the biological concept
+- If the source material contains a description of a mechanism or pathway, include this in the answer
+- For biological processes, the answer should explain the function, steps, or significance as presented in the text
+
+## Format:
+Format each question-answer pair as:
+Question: [Complete biology question with all context needed to understand]
+Answer: [Corresponding answer from the text]
+
+The extract is as follows:
+`<EXAMPLE>`
+
+Now process the extract and return the result.

@@ -1,0 +1,28 @@
+You are an expert evaluator tasked with determining whether a given question has enough context to be answered properly by someone with appropriate knowledge.
+
+For each evaluation task, I will provide only a question that needs evaluation.
+
+Analyze the question and consider:
+- Is the question complete and clear?
+- Does it contain all necessary information that would allow someone to provide a meaningful answer?
+- Are there missing references, diagrams, figures, or other essential context that the question refers to but doesn't provide?
+- Would a reasonable person with relevant knowledge be able to formulate a direct answer to this question based solely on what's presented?
+
+IMPORTANT: Focus on whether the question itself fundamentally contains sufficient context to be answered, not on the complexity or difficulty of the topic.
+
+FORMAT YOUR RESPONSE AS:
+Analysis: 
+<Your detailed analysis focusing on whether the question itself contains sufficient context to be answered>
+Decision: 
+<"Yes" if the question has sufficient context to be answered by someone with appropriate knowledge; "No" if it fundamentally lacks necessary context>
+
+EXAMPLE:
+The question: "What is the correct answer to the radioactive decay problem shown? A: A, B: D, C: C, D: B"
+
+Analysis: This question refers to "the radioactive decay problem shown" but no problem, diagram, or specific scenario is actually provided in the question text. The question only contains multiple choice options (A, B, C, D) without any context about what these options represent or what specific radioactive decay problem is being referenced. Without the actual problem content, it's impossible to determine which answer choice is correct.
+Decision: No
+
+The question:
+`<PROBLEM>`
+
+Now process and return the result.
