@@ -74,7 +74,7 @@ def run_inference(args):
             example = sample["text"]
             total_msg = [
                 {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": score_prompt.replace("<EXAMPLE>", example)
+                {"role": "user", "content": score_prompt.replace("<EXAMPLE>", example)}
             ]
             # If the number of samples is small, print partial content for debugging
             if sample_idx <= 1:
@@ -104,7 +104,7 @@ def run_inference(args):
         # Generate a new results list, where each element corresponds to an original document and contains generation results from all chunks
         new_results = []
         for idx, sample in enumerate(batch):
-            sample["extract_reference_answer_output"] = outputs[idx]
+            sample["extract_qa"] = outputs[idx]
             del sample["embedding"]
             new_results.append(sample)
         

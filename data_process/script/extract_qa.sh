@@ -7,8 +7,8 @@ cp -r /inspire/hdd/global_user/liupengfei-24025/rzfan/yq_linux_amd64 /usr/local/
 yq --version
 
 # setup env
-export PATH="/inspire/hdd/global_user/liupengfei-24025/rzfan/miniconda3/bin:$PATH"
-source activate factory
+# export PATH="/inspire/hdd/global_user/liupengfei-24025/rzfan/miniconda3/bin:$PATH"
+# source activate factory
 
 # extract NNODE and NGPU from yaml
 export yaml_path=./vllm_inference/task_config/extract_qa.yaml
@@ -17,26 +17,24 @@ export NNODE=$(yq eval '.N_NODES' $yaml_path)
 export NGPU=$(yq eval '.NODE_GPUS' $yaml_path)
 export tp=$(yq eval '.tp_size' $yaml_path)
 export NUM_TASKS=$((NGPU / tp))
+export save_path=$(yq eval '.save_path' $yaml_path)
 export save_name=$(yq eval '.save_name' $yaml_path)
 
+mkdir -p "${save_path}/${save_name}"
+
 # create logging dir
-export logging_dir=./logging/extract_reference_answer
+export logging_dir=./logging/extract_qa
 mkdir -p "${logging_dir}/${save_name}"
 
 echo "START TIME: $(date)"
 
 cmd="
 for i in \$(seq 0 \$((${NUM_TASKS}-1))); do
-    FORCE_TORCHRUN=1 \\
-    NNODES=${PET_NNODES} \\
-    NODE_RANK=${PET_NODE_RANK} \\
-    MASTER_ADDR=${MASTER_ADDR} \\
-    MASTER_PORT=${MASTER_PORT} \\
     START_GPU=\$((i * \$tp)) \\
     CUDA_VISIBLE_DEVICES=\$(seq -s, \$START_GPU \$((START_GPU+\$tp-1))) \\
-    /inspire/hdd/global_user/liupengfei-24025/rzfan/miniconda3/envs/factory/bin/python extract_reference_answer.py \\
+    python vllm_inference/extract_qa.py \\
         --config_path ${yaml_path} \\
-        > ${logging_dir}/${save_name}/\${SLURM_NODEID}_\${i}.log 2>&1 &
+        > ${logging_dir}/${save_name}/\${i}.log 2>&1 &
 done
 wait
 "
