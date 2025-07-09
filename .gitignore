@@ -1,3 +1,5 @@
 *.json
 *.jsonl
 *.log
+logging/*
+cache/*
