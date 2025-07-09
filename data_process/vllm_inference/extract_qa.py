@@ -106,7 +106,6 @@ def run_inference(args):
         new_results = []
         for idx, sample in enumerate(batch):
             sample["extract_qa"] = outputs[idx]
-            del sample["embedding"]
             new_results.append(sample)
         
         # Save the results of this batch as a jsonl file

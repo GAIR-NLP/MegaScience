@@ -12,7 +12,7 @@ N_NODES: 1
 NODE_GPUS: 8
 
 # Data Configs
-data_path: data/documents/examples.jsonl
+data_path: data/documents/example_chunks.jsonl
 prompt_path: vllm_inference/prompt/qa_extraction_chemistry_low_standard.prompt
 data_format: jsonl
 

@@ -10,6 +10,17 @@ MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoni
 
 ## ⚙️ Data Process Pipeline
 
+### Step 0. Install Environment
+
+```
+cd data_process
+conda create --name megascience python=3.10
+conda activate megascience
+pip install -r requirements.txt
+pip install flash-attn --no-build-isolation
+pip install -U pynvml
+```
+
 ### Step 1. PDF Digitalization
 
 We adopt [olmOCR](https://github.com/allenai/olmocr) to convert PDFs into text documents.
