@@ -34,7 +34,7 @@ for i in \$(seq 0 \$((${NUM_TASKS}-1))); do
     CUDA_VISIBLE_DEVICES=\$(seq -s, \$START_GPU \$((START_GPU+\$tp-1))) \\
     python vllm_inference/extract_qa.py \\
         --config_path ${yaml_path} \\
-        > ${logging_dir}/${save_name}/\${i}.log 2>&1 &
+    > ${logging_dir}/${save_name}/\${i}.log 2>&1 &
 done
 wait
 "

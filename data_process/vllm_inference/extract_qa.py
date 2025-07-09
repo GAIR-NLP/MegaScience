@@ -3,7 +3,7 @@ import json
 import os
 from typing import List, Dict, Optional
 import torch
-import torch.distributed as dist
+# import torch.distributed as dist
 from vllm import LLM, SamplingParams
 from config import GentaskConfig
 from transformers import AutoTokenizer
@@ -21,6 +21,7 @@ def split_into_batches(arguments, batch_size):
         ]
 
 def run_inference(args):
+    print(args)
     config = GentaskConfig.from_yaml(args.config_path)
     config.__post_init__()
     
