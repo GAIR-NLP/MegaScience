@@ -1,0 +1,13 @@
+python text-dedup/minhash_dedup.py \
+  --path "data/extract_qa/final_qa/extract_qa.jsonl" \
+  --local \
+  --split "train" \
+  --cache_dir "./cache" \
+  --output "data/question_dedup/extract_qa_dedup" \
+  --column "question" \
+  --batch_size 10000 \
+  --use_auth_token true \
+  --b 1 \
+  --r 10 \
+  --ngram 3 \
+  --threshold 0.6

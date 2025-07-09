@@ -41,10 +41,41 @@ bash script/extract_qa.sh
 
 After extraction completes, run the post-processing step to finalize the QA pairs:
 ```bash
-python extract_qa_postprocess.py --input data/extract_qa/original_qa --output data/extract_qa/final_qa/extract_qa.jsonl --document_save_path data/extract_qa/final_qa/documents.jsonl
+python extract_qa_postprocess.py 
+    --input data/extract_qa/original_qa \
+    --output data/extract_qa/final_qa/extract_qa.jsonl \
+    --document_save_path data/extract_qa/final_qa/documents.jsonl
+```
+### Step 3. Question Deduplication
+
+We employ [text-dedup](https://github.com/ChenghaoMou/text-dedup) to remove duplicate questions from the extracted dataset. This tool provides efficient text deduplication capabilities using various algorithms including MinHash, SimHash, and exact hash matching.
+
+#### Environment Setup
+
+First, create and activate a dedicated conda environment:
+```bash
+conda create --name textdedup python=3.10
+conda activate textdedup
+pip install text-dedup
 ```
 
-### Step 3. Question Deduplication
+#### Configuration
+
+Configure the deduplication parameters in the script:
+```bash
+script/question_dedup.sh
+```
+
+#### Execution
+
+Run the deduplication script:
+```bash
+bash script/question_dedup.sh
+```
+
+#### Output
+
+After processing, merge all deduplicated chunks into a single JSONL file for downstream use.
 
 ### Step 4. QA Refinement
 
