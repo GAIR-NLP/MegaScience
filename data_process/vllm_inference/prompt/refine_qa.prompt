@@ -1,25 +1,36 @@
-Below is a question-and-answer pair. Refine the answer based on the following requirements:
+Below is a question-and-answer pair and a reference document. Your task is to refine the question to make it clear and self-contained, then verify and refine the answer to ensure it's correct and well-explained.
 
-- **If the answer does not contain any explanation or intermediate reasoning process**:
-  - Add only necessary intermediate reasoning process leading to the given answer
-  - Ensure the added steps are logical, clear, and provide necessary explanation of the solution process
+For the question:
+- Ensure it contains sufficient information to be understood independently
+- Add necessary context from the reference document if the question is unclear
+- Maintain the original question's intent
 
-- **If the answer already includes necessary solution process**:
-  - Reorganize the solution into a clear and well-structured format for better readability and understanding
-  - for simple solutions, there is no need to use latex format
+For the answer:
+- Verify correctness against the reference document
+- If incorrect, provide the correct answer based on the document
+- If the answer lacks explanation, add necessary intermediate reasoning process leading to the given answer as a teacher would
+- Ensure the added steps are logical, clear, and provide necessary explanation of the solution process
+- If the answer already has explanation, reorganize the solution into a clear and well-structured format for better readability and understanding
+- For final answers that need exact matching (multiple-choice, calculations, fill-in-the-blank, true/false), use $\\boxed{}$ notation
 
-- **If the final answer is a specific result that can be evaluated by exact matching**:
-  - Place the final answer inside $\\boxed{}$ notation
-  - This applies to answers for multiple-choice questions, calculation problems, fill-in-the-blank questions, and true/false questions
+Requirements:
+- The refined question should include all necessary information
+- The refined answer should be accurate and well-explained
+- Both question and answer should stand alone (no references to documents or original materials)
 
-- Maintain the original question text and provide the refined answer in the same format:
-  - Question: <question text>
-  - Answer: <refined solution>
+Output format:
+First provide your reasoning for the refinements, then output the final results in this exact format without any notes:
 
-#### The question:
+Refined Question: <refined question>
+Refined Answer: <refined solution>
+
+I will provide you with the reference document, original question and its answer. Please analyze them carefully before refinement.
+
+The reference document:
+`<DOCUMENT>`
+
+The question:
 `<PROBLEM>`
 
-#### The answer:
+The answer:
 `<ANSWER>`
-
-Suppose you are a teacher, you should explain the solution in a way that is easy for a student to understand. Now process the pair and return the refined result.

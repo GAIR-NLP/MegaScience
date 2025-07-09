@@ -30,6 +30,7 @@ class GentaskConfig:
     "Data Configs"
     data_path: Optional[str] = None
     prompt_path: Optional[str] = None
+    document_path: Optional[str] = None
     data_format: Optional[str] = "jsonl"
     text_key: Optional[str] = "text"
 

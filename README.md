@@ -21,6 +21,20 @@ pip install flash-attn --no-build-isolation
 pip install -U pynvml
 ```
 
+Launch the Python interpreter and download the necessary NLTK tokenizer data:
+
+```python
+python -c "import nltk; nltk.download('punkt_tab')"
+```
+
+Alternatively, you can run this interactively:
+```python
+python
+>>> import nltk
+>>> nltk.download('punkt_tab')
+>>> exit()
+```
+
 ### Step 1. PDF Digitalization
 
 We utilize [olmOCR](https://github.com/allenai/olmocr) to convert PDF documents into text format. Please follow the [olmOCR documentation](https://github.com/allenai/olmocr) to process your PDFs, then segment the resulting documents into 4096-token chunks and store them in the `text` field.
@@ -41,7 +55,7 @@ bash script/extract_qa.sh
 
 After extraction completes, run the post-processing step to finalize the QA pairs:
 ```bash
-python extract_qa_postprocess.py 
+python vllm_inference/extract_qa_postprocess.py 
     --input data/extract_qa/original_qa \
     --output data/extract_qa/final_qa/extract_qa.jsonl \
     --document_save_path data/extract_qa/final_qa/documents.jsonl
@@ -78,6 +92,22 @@ bash script/question_dedup.sh
 After processing, merge all deduplicated chunks into a single JSONL file for downstream use.
 
 ### Step 4. QA Refinement
+
+Configure the QA refinement process by modifying `data_process/vllm_inference/task_config/refine_qa.yaml`.
+
+Execute the extraction script:
+
+```
+bash script/refine_qa.sh
+```
+
+After refinement completes, run the post-processing step to finalize the refined QA pairs:
+
+```
+python vllm_inference/refine_qa_postprocess.py \
+    --input_dir data/refine_qa/original_data \
+    --output_file data/refine_qa/final_data/refined_qa.jsonl
+```
 
 ### Step 5. CoT Augmentation
 

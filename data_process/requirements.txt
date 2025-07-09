@@ -3,3 +3,4 @@ vllm
 transformers
 tqdm
 PyYAML
+nltk
