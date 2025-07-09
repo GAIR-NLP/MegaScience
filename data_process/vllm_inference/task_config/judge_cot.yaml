@@ -1,5 +1,5 @@
 # Model Loading Configs
-model_path: /inspire/hdd/global_user/liupengfei-24025/rzfan/models/Llama-3.3-70B-Instruct
+model_path: meta-llama/Llama-3.3-70B-Instruct
 tp_size: 4
 
 # Sampling Configs

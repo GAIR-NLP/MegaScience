@@ -111,9 +111,24 @@ python vllm_inference/refine_qa_postprocess.py \
 
 ### Step 5. CoT Augmentation
 
-#### Find no CoT data
+#### Find no CoT data (judge CoT)
 
+Configure the CoT judgement process by modifying `data_process/vllm_inference/task_config/judge_cot.yaml`.
 
+Execute the extraction script:
+
+```
+bash script/judge_cot.sh
+```
+
+After refinement completes, run the post-processing step to finalize the refined QA pairs:
+
+```
+python vllm_inference/judge_cot_postprocess.py \
+    --input_file data/augment_cot/judge_cot/original_data \
+    --output_cot data/augment_cot/judge_cot/final_data/cot_data.jsonl \
+    --output_no_cot data/augment_cot/judge_cot/final_data/no_cot_data.jsonl
+```
 
 ### Step 6. QA Filtering
 
