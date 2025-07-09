@@ -1,10 +1,6 @@
-# sudo add-apt-repository ppa:rmescandon/yq
-# sudo apt update
-# sudo apt install yq -y
-
-chmod +x /inspire/hdd/global_user/liupengfei-24025/rzfan/yq_linux_amd64
-cp -r /inspire/hdd/global_user/liupengfei-24025/rzfan/yq_linux_amd64 /usr/local/bin/yq
-yq --version
+sudo add-apt-repository ppa:rmescandon/yq
+sudo apt update
+sudo apt install yq -y
 
 # extract NNODE and NGPU from yaml
 export yaml_path=./vllm_inference/task_config/refine_qa.yaml
@@ -15,8 +11,6 @@ export tp=$(yq eval '.tp_size' $yaml_path)
 export NUM_TASKS=$((NGPU / tp))
 export save_path=$(yq eval '.save_path' $yaml_path)
 export save_name=$(yq eval '.save_name' $yaml_path)
-
-mkdir -p "${save_path}/${save_name}"
 
 # create logging dir
 export logging_dir=./logging/refine_qa

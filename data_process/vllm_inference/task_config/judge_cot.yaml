@@ -1,0 +1,22 @@
+# Model Loading Configs
+model_path: /inspire/hdd/global_user/liupengfei-24025/rzfan/models/Llama-3.3-70B-Instruct
+tp_size: 4
+
+# Sampling Configs
+temperature: 0.0
+top_p: 0.9
+max_tokens: 16000
+
+# Distribution Configs
+N_NODES: 1
+NODE_GPUS: 8
+
+# Data Configs
+data_path: data/refine_qa/final_data/refined_qa.jsonl
+prompt_path: vllm_inference/prompt/judge_cot.prompt
+data_format: jsonl
+
+# Save configs
+save_path: data/augment_cot/judge_cot/original_data
+save_name: judge_cot
+save_interval: 64

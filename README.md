@@ -111,6 +111,10 @@ python vllm_inference/refine_qa_postprocess.py \
 
 ### Step 5. CoT Augmentation
 
+#### Find no CoT data
+
+
+
 ### Step 6. QA Filtering
 
 ### Step 7. LLM-based Question Decontamination
