@@ -169,6 +169,15 @@ python vllm_inference/filter_qa_postprocess.py \
 
 ### Step 7. LLM-based Question Decontamination
 
+#### Generate Benchmark Embedding
+
+```
+python decontamination/benchmark_index_save.py \
+    --model /inspire/hdd/global_user/liupengfei-24025/rzfan/models/bge-large-en-v1.5 \
+    --batch_size 1024 \
+    --output_path decontamination/index/benchmark_embedding.jsonl
+```
+
 ### Step 8. Reference Answer Extraction
 
 ## 🏋️ Supervised Finetuning

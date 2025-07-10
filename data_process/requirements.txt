@@ -4,3 +4,4 @@ transformers
 tqdm
 PyYAML
 nltk
+sentence_transformers
