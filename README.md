@@ -217,6 +217,22 @@ python vllm_inference/llm_based_decontamination_postprocess.py \
 
 ### Step 8. Reference Answer Extraction
 
+Configure the reference answer extraction process by modifying `data_process/vllm_inference/task_config/extract_reference_answer.yaml`.
+
+Execute the extraction script:
+
+```
+bash script/extract_reference_answer.sh
+```
+
+After extraction completes, run the post-processing step to finalize the QA pairs:
+
+```
+python vllm_inference/extract_reference_answer_postprocess.py \
+    --input_data_dir data/extract_reference_answer/original_data \
+    --output_path data/extract_reference_answer/final_data/refined_augmented_cot_filtering_qa_decontamination_reference_answer.jsonl
+```
+
 ## 🏋️ Supervised Finetuning
 
 ## 🎯 Evaluation
