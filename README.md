@@ -223,7 +223,7 @@ python vllm_inference/llm_based_decontamination_postprocess.py \
     --output_path data/llm_based_decontamination/final_data/refined_augmented_cot_filtering_qa_decontamination.jsonl
 ```
 
-> **Note**: We perform decontamination against [OlympicArena](https://github.com/GAIR-NLP/OlympicArena). While OlympicArena's test set is not publicly available, our decontamination process ensures no overlap with this important benchmark.
+> **Note**: Our open-source code does not include OlympicArena benchmarks since their test sets are not publicly available. However, we have internally performed decontamination against [OlympicArena](https://github.com/GAIR-NLP/OlympicArena) to ensure there is no data overlap between our dataset and this benchmark.
 
 ### Step 8. Reference Answer Extraction
 
