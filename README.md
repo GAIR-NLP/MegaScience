@@ -173,9 +173,28 @@ python vllm_inference/filter_qa_postprocess.py \
 
 ```
 python decontamination/benchmark_index_save.py \
-    --model /inspire/hdd/global_user/liupengfei-24025/rzfan/models/bge-large-en-v1.5 \
+    --model BAAI/bge-large-en-v1.5 \
     --batch_size 1024 \
     --output_path decontamination/index/benchmark_embedding.jsonl
+```
+
+#### Generate Data Embedding
+
+```
+python decontamination/data_index_save.py \
+    --model BAAI/bge-large-en-v1.5 \
+    --batch_size 1024 \
+    --input_path data/filter_qa/final_data/refined_augmented_cot_filtering_qa.jsonl \
+    --output_path decontamination/index/data_embedding.jsonl
+```
+
+#### Embedding Search: Data -> Benchmark
+
+```
+python decontamination/vector_search.py \
+    --data_embedding_path decontamination/index/data_embedding.jsonl \
+    --benchmark_embedding_path decontamination/index/benchmark_embedding.jsonl \
+    --output_path decontamination/results/refined_augmented_cot_filtering_qa_with_top5_similarity_benchmark.jsonl
 ```
 
 ### Step 8. Reference Answer Extraction
