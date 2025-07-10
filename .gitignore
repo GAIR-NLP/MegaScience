@@ -3,3 +3,5 @@
 *.log
 logging/*
 cache/*
+!data_process/decontamination/benchmarks/*.json
+!data_process/decontamination/benchmarks/*.jsonl
