@@ -207,6 +207,14 @@ Execute the extraction script:
 bash script/llm_based_decontamination.sh
 ```
 
+After judgement completes, run the post-processing step to finalize the QA pairs:
+
+```
+python vllm_inference/llm_based_decontamination_postprocess.py \
+    --input_data_dir data/llm_based_decontamination/original_data \
+    --output_path data/llm_based_decontamination/final_data/refined_augmented_cot_filtering_qa_decontamination.jsonl
+```
+
 ### Step 8. Reference Answer Extraction
 
 ## 🏋️ Supervised Finetuning
