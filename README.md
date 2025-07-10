@@ -169,7 +169,11 @@ python vllm_inference/filter_qa_postprocess.py \
 
 ### Step 7. LLM-based Question Decontamination
 
-#### Generate Benchmark Embedding
+To ensure data quality and prevent benchmark contamination, we implement a comprehensive decontamination pipeline using embedding-based similarity search followed by LLM-based semantic judgment.
+
+#### Generate Benchmark Embeddings
+
+First, generate embeddings for benchmark questions to create a searchable index:
 
 ```
 python decontamination/benchmark_index_save.py \
@@ -178,7 +182,9 @@ python decontamination/benchmark_index_save.py \
     --output_path decontamination/index/benchmark_embedding.jsonl
 ```
 
-#### Generate Data Embedding
+#### Generate Dataset Embeddings
+
+Generate embeddings for your dataset questions:
 
 ```
 python decontamination/data_index_save.py \
@@ -188,7 +194,9 @@ python decontamination/data_index_save.py \
     --output_path decontamination/index/data_embedding.jsonl
 ```
 
-#### Embedding Search: Data -> Benchmark
+#### Similarity Search
+
+Perform vector similarity search to identify potentially similar questions between your dataset and benchmark:
 
 ```
 python decontamination/vector_search.py \
@@ -199,21 +207,23 @@ python decontamination/vector_search.py \
 
 #### LLM-based Similarity Judge
 
-Configure the QA extraction process by modifying `data_process/vllm_inference/task_config/llm_based_decontamination.yaml`.
+Configure the decontamination process by modifying the task configuration:g `data_process/vllm_inference/task_config/llm_based_decontamination.yaml`.
 
-Execute the extraction script:
+Execute the LLM-based similarity judgment:
 
 ```
 bash script/llm_based_decontamination.sh
 ```
 
-After judgement completes, run the post-processing step to finalize the QA pairs:
+After the LLM judgment completes, run the post-processing step to generate the final decontaminated dataset:
 
 ```
 python vllm_inference/llm_based_decontamination_postprocess.py \
     --input_data_dir data/llm_based_decontamination/original_data \
     --output_path data/llm_based_decontamination/final_data/refined_augmented_cot_filtering_qa_decontamination.jsonl
 ```
+
+> **Note**: We perform decontamination against [OlympicArena](https://github.com/GAIR-NLP/OlympicArena). While OlympicArena's test set is not publicly available, our decontamination process ensures no overlap with this important benchmark.
 
 ### Step 8. Reference Answer Extraction
 
