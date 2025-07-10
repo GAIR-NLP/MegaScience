@@ -143,10 +143,10 @@ bash script/distill_cot.sh
 After distillation completes, run the post-processing step to finalize the QA pairs:
 
 ```
-python vllm_inference/judge_cot_postprocess.py \
-    --input_file data/augment_cot/judge_cot/original_data \
-    --output_cot data/augment_cot/judge_cot/final_data/cot_data.jsonl \
-    --output_no_cot data/augment_cot/judge_cot/final_data/no_cot_data.jsonl
+python vllm_inference/distill_cot_postprocess.py \
+    --input_no_cot_dir data/augment_cot/distill_cot/original_data \
+    --input_cot_file data/augment_cot/judge_cot/final_data/cot_data.jsonl \
+    --output data/augment_cot/distill_cot/final_data/refined_augmented_cot_qa.jsonl
 ```
 
 ### Step 6. QA Filtering
