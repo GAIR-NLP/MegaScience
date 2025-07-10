@@ -121,7 +121,26 @@ Execute the extraction script:
 bash script/judge_cot.sh
 ```
 
-After refinement completes, run the post-processing step to finalize the refined QA pairs:
+After refinement completes, run the post-processing step to finalize the QA pairs with CoT and no CoT:
+
+```
+python vllm_inference/judge_cot_postprocess.py \
+    --input_file data/augment_cot/judge_cot/original_data \
+    --output_cot data/augment_cot/judge_cot/final_data/cot_data.jsonl \
+    --output_no_cot data/augment_cot/judge_cot/final_data/no_cot_data.jsonl
+```
+
+#### Distill CoT for no CoT data
+
+Configure the CoT distillation process by modifying `data_process/vllm_inference/task_config/distill_cot.yaml`.
+
+Execute the extraction script:
+
+```
+bash script/distill_cot.sh
+```
+
+After distillation completes, run the post-processing step to finalize the QA pairs:
 
 ```
 python vllm_inference/judge_cot_postprocess.py \
