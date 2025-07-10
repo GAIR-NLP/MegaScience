@@ -104,7 +104,7 @@ def run_inference(args):
         # Generate a new results list, where each element corresponds to an original document and contains generation results from all chunks
         new_results = []
         for idx, sample in enumerate(batch):
-            sample["judge_cot_output"] = outputs[idx]
+            sample["distill_cot"] = outputs[idx]
             new_results.append(sample)
         
         # Save the results of this batch as a jsonl file
