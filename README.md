@@ -162,10 +162,9 @@ bash script/filter_qa.sh
 After filtering completes, run the post-processing step to finalize the QA pairs:
 
 ```
-python vllm_inference/judge_cot_postprocess.py \
-    --input_file data/augment_cot/judge_cot/original_data \
-    --output_cot data/augment_cot/judge_cot/final_data/cot_data.jsonl \
-    --output_no_cot data/augment_cot/judge_cot/final_data/no_cot_data.jsonl
+python vllm_inference/filter_qa_postprocess.py \
+    --input_dir data/filter_qa/original_data \
+    --output_file data/filter_qa/final_data/refined_augmented_cot_filtering_qa.jsonl
 ```
 
 ### Step 7. LLM-based Question Decontamination
