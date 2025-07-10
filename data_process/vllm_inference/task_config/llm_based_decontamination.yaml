@@ -1,0 +1,22 @@
+# Model Loading Configs
+model_path: /inspire/hdd/global_user/liupengfei-24025/rzfan/models/Llama-3.3-70B-Instruct
+tp_size: 4
+
+# Sampling Configs
+temperature: 0.0
+top_p: 0.9
+max_tokens: 16000
+
+# Distribution Configs
+N_NODES: 1
+NODE_GPUS: 8
+
+# Data Configs
+data_path: decontamination/results/refined_augmented_cot_filtering_qa_with_top5_similarity_benchmark.jsonl
+prompt_path: vllm_inference/prompt/llm_based_decontamination.prompt
+data_format: jsonl
+
+# Save configs
+save_path: data/llm_based_decontamination/original_data
+save_name: llm_based_decontamination
+save_interval: 64

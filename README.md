@@ -197,6 +197,16 @@ python decontamination/vector_search.py \
     --output_path decontamination/results/refined_augmented_cot_filtering_qa_with_top5_similarity_benchmark.jsonl
 ```
 
+#### LLM-based Similarity Judge
+
+Configure the QA extraction process by modifying `data_process/vllm_inference/task_config/llm_based_decontamination.yaml`.
+
+Execute the extraction script:
+
+```
+bash script/llm_based_decontamination.sh
+```
+
 ### Step 8. Reference Answer Extraction
 
 ## 🏋️ Supervised Finetuning
