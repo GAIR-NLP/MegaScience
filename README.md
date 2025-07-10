@@ -151,6 +151,23 @@ python vllm_inference/distill_cot_postprocess.py \
 
 ### Step 6. QA Filtering
 
+Configure the QA filtering process by modifying `data_process/vllm_inference/task_config/filter_qa.yaml`.
+
+Execute the extraction script:
+
+```
+bash script/filter_qa.sh
+```
+
+After filtering completes, run the post-processing step to finalize the QA pairs:
+
+```
+python vllm_inference/judge_cot_postprocess.py \
+    --input_file data/augment_cot/judge_cot/original_data \
+    --output_cot data/augment_cot/judge_cot/final_data/cot_data.jsonl \
+    --output_no_cot data/augment_cot/judge_cot/final_data/no_cot_data.jsonl
+```
+
 ### Step 7. LLM-based Question Decontamination
 
 ### Step 8. Reference Answer Extraction
