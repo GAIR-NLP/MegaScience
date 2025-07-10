@@ -1,10 +1,6 @@
-# sudo add-apt-repository ppa:rmescandon/yq
-# sudo apt update
-# sudo apt install yq -y
-
-chmod +x /inspire/hdd/global_user/liupengfei-24025/rzfan/yq_linux_amd64
-cp -r /inspire/hdd/global_user/liupengfei-24025/rzfan/yq_linux_amd64 /usr/local/bin/yq
-yq --version
+sudo add-apt-repository ppa:rmescandon/yq
+sudo apt update
+sudo apt install yq -y
 
 # extract NNODE and NGPU from yaml
 export yaml_path=./vllm_inference/task_config/judge_cot.yaml
