@@ -12,7 +12,7 @@ N_NODES: 1
 NODE_GPUS: 8
 
 # Data Configs
-data_path: data/refine_qa/final_data/distill_cot.jsonl
+data_path: data/augment_cot/judge_cot/final_data/no_cot_data.jsonl
 prompt_path: vllm_inference/prompt/distill_cot.prompt
 data_format: jsonl
 
