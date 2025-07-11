@@ -12,7 +12,7 @@ MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoni
 
 ### Step 0. Install Environment
 
-```
+```bash
 cd data_process
 conda create --name megascience python=3.10
 conda activate megascience
@@ -97,13 +97,13 @@ Configure the QA refinement process by modifying `data_process/vllm_inference/ta
 
 Execute the extraction script:
 
-```
+```bash
 bash script/refine_qa.sh
 ```
 
 After refinement completes, run the post-processing step to finalize the refined QA pairs:
 
-```
+```bash
 python vllm_inference/refine_qa_postprocess.py \
     --input_dir data/refine_qa/original_data \
     --output_file data/refine_qa/final_data/refined_qa.jsonl
@@ -117,13 +117,13 @@ Configure the CoT judgement process by modifying `data_process/vllm_inference/ta
 
 Execute the extraction script:
 
-```
+```bash
 bash script/judge_cot.sh
 ```
 
 After refinement completes, run the post-processing step to finalize the QA pairs with CoT and no CoT:
 
-```
+```bash
 python vllm_inference/judge_cot_postprocess.py \
     --input_file data/augment_cot/judge_cot/original_data \
     --output_cot data/augment_cot/judge_cot/final_data/cot_data.jsonl \
@@ -136,13 +136,13 @@ Configure the CoT distillation process by modifying `data_process/vllm_inference
 
 Execute the extraction script:
 
-```
+```bash
 bash script/distill_cot.sh
 ```
 
 After distillation completes, run the post-processing step to finalize the QA pairs:
 
-```
+```bash
 python vllm_inference/distill_cot_postprocess.py \
     --input_no_cot_dir data/augment_cot/distill_cot/original_data \
     --input_cot_file data/augment_cot/judge_cot/final_data/cot_data.jsonl \
@@ -155,13 +155,13 @@ Configure the QA filtering process by modifying `data_process/vllm_inference/tas
 
 Execute the extraction script:
 
-```
+```bash
 bash script/filter_qa.sh
 ```
 
 After filtering completes, run the post-processing step to finalize the QA pairs:
 
-```
+```bash
 python vllm_inference/filter_qa_postprocess.py \
     --input_dir data/filter_qa/original_data \
     --output_file data/filter_qa/final_data/refined_augmented_cot_filtering_qa.jsonl
@@ -175,7 +175,7 @@ To ensure data quality and prevent benchmark contamination, we implement a compr
 
 First, generate embeddings for benchmark questions to create a searchable index:
 
-```
+```bash
 python decontamination/benchmark_index_save.py \
     --model BAAI/bge-large-en-v1.5 \
     --batch_size 1024 \
@@ -186,7 +186,7 @@ python decontamination/benchmark_index_save.py \
 
 Generate embeddings for your dataset questions:
 
-```
+```bash
 python decontamination/data_index_save.py \
     --model BAAI/bge-large-en-v1.5 \
     --batch_size 1024 \
@@ -198,7 +198,7 @@ python decontamination/data_index_save.py \
 
 Perform vector similarity search to identify potentially similar questions between your dataset and benchmark:
 
-```
+```bash
 python decontamination/vector_search.py \
     --data_embedding_path decontamination/index/data_embedding.jsonl \
     --benchmark_embedding_path decontamination/index/benchmark_embedding.jsonl \
@@ -211,13 +211,13 @@ Configure the decontamination process by modifying the task configuration:g `dat
 
 Execute the LLM-based similarity judgment:
 
-```
+```bash
 bash script/llm_based_decontamination.sh
 ```
 
 After the LLM judgment completes, run the post-processing step to generate the final decontaminated dataset:
 
-```
+```bash
 python vllm_inference/llm_based_decontamination_postprocess.py \
     --input_data_dir data/llm_based_decontamination/original_data \
     --output_path data/llm_based_decontamination/final_data/refined_augmented_cot_filtering_qa_decontamination.jsonl
@@ -231,13 +231,13 @@ Configure the reference answer extraction process by modifying `data_process/vll
 
 Execute the extraction script:
 
-```
+```bash
 bash script/extract_reference_answer.sh
 ```
 
 After extraction completes, run the post-processing step to finalize the QA pairs:
 
-```
+```bash
 python vllm_inference/extract_reference_answer_postprocess.py \
     --input_data_dir data/extract_reference_answer/original_data \
     --output_path data/extract_reference_answer/final_data/refined_augmented_cot_filtering_qa_decontamination_reference_answer.jsonl
@@ -245,19 +245,20 @@ python vllm_inference/extract_reference_answer_postprocess.py \
 
 ### Step 9. Data Finalization
 
-Transform the data format into:
+Transform the processed data into the final standardized format with the following structure:
 
-```
+```json
 {
-    "question": ,
-    "answer": ,
-    "subject": ,
-    "reference_answer": 
+    "question": "Your question text here",
+    "answer": "Your answer text here", 
+    "subject": "Subject category",
+    "reference_answer": "Reference answer text here"
 }
 ```
 
-Run the following process:
-```
+Execute the finalization process using the command below:
+
+```bash
 python finalize_data.py \
     --input_path data/extract_reference_answer/final_data/refined_augmented_cot_filtering_qa_decontamination_reference_answer.jsonl \
     --output_path data/final_data.jsonl
