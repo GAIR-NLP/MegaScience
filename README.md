@@ -283,4 +283,8 @@ To get started with fine-tuning:
 
 ## 🎯 Evaluation
 
+## ❤️ Acknowledgement
+
+This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup](https://github.com/ChenghaoMou/text-dedup), and [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Thanks for their wonderful works.
+
 ## 🥳 Citation
