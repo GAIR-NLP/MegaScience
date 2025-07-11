@@ -243,6 +243,26 @@ python vllm_inference/extract_reference_answer_postprocess.py \
     --output_path data/extract_reference_answer/final_data/refined_augmented_cot_filtering_qa_decontamination_reference_answer.jsonl
 ```
 
+### Step 9. Data Finalization
+
+Transform the data format into:
+
+```
+{
+    "question": ,
+    "answer": ,
+    "subject": ,
+    "reference_answer": 
+}
+```
+
+Run the following process:
+```
+python finalize_data.py \
+    --input_path data/extract_reference_answer/final_data/refined_augmented_cot_filtering_qa_decontamination_reference_answer.jsonl \
+    --output_path data/final_data.jsonl
+```
+
 ## 🏋️ Supervised Finetuning
 
 ## 🎯 Evaluation
