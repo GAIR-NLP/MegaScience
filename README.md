@@ -266,6 +266,21 @@ python finalize_data.py \
 
 ## 🏋️ Supervised Finetuning
 
+We utilize [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to fine-tune the base models using our finalized dataset.
+
+Please refer to the [LLaMA-Factory documentation](https://llamafactory.readthedocs.io/en/latest/) for detailed setup and usage instructions.
+
+Our training configuration is located at:
+```
+supervised_finetuning/training_config.yaml
+```
+
+To get started with fine-tuning:
+
+1. **Installation**: Follow the [installation guide](https://github.com/hiyouga/LLaMA-Factory#installation) to set up LLaMA-Factory
+2. **Configuration**: Use our provided training config file as a starting point
+3. **Execution**: Run the fine-tuning process according to the LLaMA-Factory documentation
+
 ## 🎯 Evaluation
 
 ## 🥳 Citation
