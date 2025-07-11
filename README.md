@@ -301,6 +301,6 @@ bash scripts/eval_science.sh <model_path>
 
 ## ❤️ Acknowledgement
 
-This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup](https://github.com/ChenghaoMou/text-dedup), and [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Thanks for their wonderful works.
+This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup](https://github.com/ChenghaoMou/text-dedup), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [OlympicArena](https://github.com/GAIR-NLP/OlympicArena), and [OSES](https://github.com/GAIR-NLP/OSES). Thanks for their wonderful works.
 
 ## 🥳 Citation
