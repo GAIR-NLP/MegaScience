@@ -283,15 +283,15 @@ To get started with fine-tuning:
 
 ## 🎯 Evaluation
 
-We utilize the [Open Science Evaluation System (OSES)](https://github.com/GAIR-NLP/OSES) to evaluate our models on various scientific benchmarks.
+We utilize the [Language Model Open Science Evaluation](https://github.com/GAIR-NLP/lm-open-science-evaluation) to evaluate our models on various scientific benchmarks.
 
 Additionally, we evaluate our models on [OlympicArena](https://github.com/GAIR-NLP/OlympicArena), a comprehensive benchmark for multi-discipline cognitive reasoning. Since the test set answers are not publicly available, please follow the [OlympicArena submission guidelines](https://github.com/GAIR-NLP/OlympicArena#submit-your-result) to submit your results for evaluation.
 
 To reproduce our evaluation results:
 
-1. **Set up the OSES environment**: First, follow the instructions in [OSES](https://github.com/GAIR-NLP/OSES) to deploy the evaluation environment.
+1. **Set up the environment**: First, follow the instructions in [Language Model Open Science Evaluation](https://github.com/GAIR-NLP/lm-open-science-evaluation) to deploy the evaluation environment.
 
-2. **Run OSES evaluation**: Execute the following script with your model path:
+2. **Run evaluation**: Execute the following script with your model path:
 
 ```bash
 bash scripts/eval_science.sh <model_path>
@@ -301,6 +301,6 @@ bash scripts/eval_science.sh <model_path>
 
 ## ❤️ Acknowledgement
 
-This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup](https://github.com/ChenghaoMou/text-dedup), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [OlympicArena](https://github.com/GAIR-NLP/OlympicArena), and [OSES](https://github.com/GAIR-NLP/OSES). Thanks for their wonderful works.
+This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup](https://github.com/ChenghaoMou/text-dedup), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [OlympicArena](https://github.com/GAIR-NLP/OlympicArena), and [Language Model Open Science Evaluation](https://github.com/GAIR-NLP/lm-open-science-evaluation). Thanks for their wonderful works.
 
 ## 🥳 Citation
