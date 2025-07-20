@@ -40,6 +40,8 @@ for Science Reasoning
 
 ![](./assets/main_figure.png)
 
+To develop AI scientists and support human researchers in advancing the frontiers of natural science discovery, we first present **TextbookReasoning**, an open dataset featuring truthful reference answers extracted from 12k university-level scientific textbooks, comprising 650k reasoning questions spanning 7 scientific disciplines. We further introduce **MegaScience**, a large-scale mixture of high-quality open-source datasets totaling 1.25 million instances, developed through systematic ablation studies that evaluate various data selection methodologies to identify the optimal subset for each publicly available scientific dataset. Meanwhile, we build a comprehensive evaluation system covering diverse subjects and question types across 15 benchmarks, incorporating comprehensive answer extraction strategies to ensure accurate evaluation metrics. Models trained on MegaScience significantly outperform the corresponding official instruct models in scientific reasoning.
+
 ## ⚙️ Data Process Pipeline
 
 ### Step 0. Install Environment
