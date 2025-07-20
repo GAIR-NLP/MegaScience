@@ -1,3 +1,16 @@
+<div align="center">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+    <img src="./assets/megascience_logo.png" alt="MegaScience Logo" width="80">
+    <div>
+      <h1 style="margin: 0;">MegaScience<br>
+      <span style="font-size: 18px; font-weight: normal;">
+        Pushing the Frontiers of Post-Training Datasets for Science Reasoning
+      </span>
+      </h1>
+    </div>
+  </div>
+</div>
+
 # MegaScience
 MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning
 
