@@ -18,6 +18,11 @@ for Science Reasoning
 
 ## 💎 Resources
 
+| Dataset Name      | HuggingFace Link                                              | Size    | License                                                      |
+|-----------------|-----------------------------------------------------------------| ------- | ------------------------------------------------------------ |
+| TextbookReasoning | [🤗 MegaScience/TextbookReasoning](https://huggingface.co/datasets/MegaScience/TextbookReasoning)) | **0.65 million** | [CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0) |
+| MegaScience | [🤗 MegaScience/MegaScience](https://huggingface.co/datasets/MegaScience/MegaScience)) | **1.25 million** | [CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0) |
+
 ## 🚀 Introduction
 
 ## ⚙️ Data Process Pipeline
