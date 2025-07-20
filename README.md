@@ -1,3 +1,8 @@
+<center>
+  <h1><img src="./assets/megascience_logo.png" alt="Logo" width="28" style="vertical-align: middle;"/>MegaScience:</h1><br>
+    <h1>Pushing the Frontiers of Post-Training Datasets for Science Reasoning</h1>
+</center>
+
 # <img src="./assets/megascience_logo.png" alt="Logo" width="28" style="vertical-align: middle;"/>MegaScience: <br>Pushing the Frontiers of Post-Training Datasets for Science Reasoning
 
 # MegaScience
