@@ -1,7 +1,6 @@
 <div align="center">
-<h2><img src="./assets/megascience_logo_no_words.png" alt="Logo" width="50" style="vertical-align: middle;"/> MegaScience<br>
-Pushing the Frontiers of Post-Training Datasets for Science Reasoning
-</h2>
+<h1><img src="./assets/megascience_logo_no_words.png" alt="Logo" width="50" style="vertical-align: middle;"/> MegaScience</h1><br>
+<h2>Pushing the Frontiers of Post-Training Datasets for Science Reasoning</h2>
 </div>
 
 
