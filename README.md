@@ -26,6 +26,9 @@ for Science Reasoning
 | Model Name      | HuggingFace Checkpoint                                          | Size    | License                                                      |
 |-----------------|-----------------------------------------------------------------| ------- | ------------------------------------------------------------ |
 | Qwen3-14B-MegaScience | [🤗 MegaScience/Qwen3-14B-MegaScience](https://huggingface.co/MegaScience/Qwen3-14B-MegaScience) | 14B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| Qwen3-8B-MegaScience | [🤗 MegaScience/Qwen3-8B-MegaScience](https://huggingface.co/MegaScience/Qwen3-8B-MegaScience) | 8B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| Qwen3-4B-MegaScience | [🤗 MegaScience/Qwen3-4B-MegaScience](https://huggingface.co/MegaScience/Qwen3-4B-MegaScience) | 4B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| Qwen3-1.7B-MegaScience | [🤗 MegaScience/Qwen3-1.7B-MegaScience](https://huggingface.co/MegaScience/Qwen3-1.7B-MegaScience) | 1.7B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
 
 ## 🚀 Introduction
 
