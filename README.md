@@ -338,3 +338,15 @@ bash scripts/eval_science.sh <model_path>
 This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup](https://github.com/ChenghaoMou/text-dedup), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [OlympicArena](https://github.com/GAIR-NLP/OlympicArena), and [Language Model Open Science Evaluation](https://github.com/GAIR-NLP/lm-open-science-evaluation). Thanks for their wonderful works.
 
 ## 🥳 Citation
+
+If you find this work useful, please cite:
+
+```
+@article{fan2025megascience,
+  title={MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning},
+  author={Fan, Run-Ze and Wang, Zengzhi and Liu, Pengfei},
+  year={2025},
+  journal={arXiv preprint arXiv:xxx},
+  url={https://arxiv.org/abs/xxx},
+}
+```
