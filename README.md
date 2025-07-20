@@ -1,8 +1,6 @@
 <div align="center">
 <h1><img src="./assets/megascience_logo_no_words.png" alt="Logo" width="50" style="vertical-align: middle;"/> MegaScience<br>
-    <span style="font-size: 12px; font-weight: normal;">
 Pushing the Frontiers of Post-Training Datasets for Science Reasoning
-    </span>
 </h1>
 </div>
 
