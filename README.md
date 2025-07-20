@@ -1,14 +1,18 @@
 <div align="center">
-  <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-    <img src="./assets/megascience_logo.png" alt="MegaScience Logo" width="80">
-    <div>
-      <h1 style="margin: 0;">MegaScience<br>
-      <span style="font-size: 18px; font-weight: normal;">
-        Pushing the Frontiers of Post-Training Datasets for Science Reasoning
-      </span>
-      </h1>
-    </div>
-  </div>
+  <table style="border: none;">
+    <tr>
+      <td style="vertical-align: middle;">
+        <img src="./assets/megascience_logo.png" alt="MegaScience Logo" width="80">
+      </td>
+      <td style="padding-left: 15px; vertical-align: middle;">
+        <h1 style="margin: 0;">MegaScience<br>
+          <span style="font-size: 18px; font-weight: normal;">
+            Pushing the Frontiers of Post-Training Datasets for Science Reasoning
+          </span>
+        </h1>
+      </td>
+    </tr>
+  </table>
 </div>
 
 # MegaScience
