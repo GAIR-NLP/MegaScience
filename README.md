@@ -1,5 +1,5 @@
 <div align="center">
-<h1><img src="./assets/megascience_logo.png" alt="Logo" width="50" style="vertical-align: middle;"/>MegaScience<br>
+<h1><img src="./assets/megascience_logo_no_words.png" alt="Logo" width="50" style="vertical-align: middle;"/>MegaScience<br>
 Pushing the Frontiers of Post-Training Datasets for Science Reasoning
 </h1>
 </div>
