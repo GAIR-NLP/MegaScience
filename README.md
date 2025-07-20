@@ -14,6 +14,7 @@ for Science Reasoning
 
 
 ## 🔥 News
+- **[2025-07-22]** 🎉🎉🎉 We release our detailed technical report on [**arXiv**](https://arxiv.org/abs/xxx), datasets and models trained on MegaScience on [**HuggingFace**](https://huggingface.co/MegaScience), and evaluation system on [**Github**](https://github.com/GAIR-NLP/lm-open-science-evaluation).
 
 ## 💎 Resources
 
