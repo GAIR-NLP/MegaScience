@@ -23,6 +23,10 @@ for Science Reasoning
 | **TextbookReasoning** | [🤗 MegaScience/TextbookReasoning](https://huggingface.co/datasets/MegaScience/TextbookReasoning) | 0.65 million | [CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0) |
 | **MegaScience** | [🤗 MegaScience/MegaScience](https://huggingface.co/datasets/MegaScience/MegaScience) | 1.25 million | [CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0) |
 
+| Model Name      | HuggingFace Checkpoint                                          | Size    | License                                                      |
+|-----------------|-----------------------------------------------------------------| ------- | ------------------------------------------------------------ |
+| Qwen3-14B-MegaScience | [🤗 MegaScience/Qwen3-14B-MegaScience](https://huggingface.co/MegaScience/Qwen3-14B-MegaScience) | 14B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
+
 ## 🚀 Introduction
 
 ## ⚙️ Data Process Pipeline
