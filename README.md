@@ -3,7 +3,6 @@
 Pushing the Frontiers of Post-Training Datasets for Science Reasoning
 </h1>
 </div>
-<div align="center">
 
 
 
