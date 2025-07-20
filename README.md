@@ -29,6 +29,12 @@ for Science Reasoning
 | Qwen3-8B-MegaScience | [🤗 MegaScience/Qwen3-8B-MegaScience](https://huggingface.co/MegaScience/Qwen3-8B-MegaScience) | 8B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
 | Qwen3-4B-MegaScience | [🤗 MegaScience/Qwen3-4B-MegaScience](https://huggingface.co/MegaScience/Qwen3-4B-MegaScience) | 4B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
 | Qwen3-1.7B-MegaScience | [🤗 MegaScience/Qwen3-1.7B-MegaScience](https://huggingface.co/MegaScience/Qwen3-1.7B-MegaScience) | 1.7B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| Qwen2.5-7B-MegaScience | [🤗 MegaScience/Qwen2.5-7B-MegaScience](https://huggingface.co/MegaScience/Qwen2.5-7B-MegaScience) | 7B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| Qwen2.5-3B-MegaScience | [🤗 MegaScience/Qwen2.5-3B-MegaScience](https://huggingface.co/MegaScience/Qwen2.5-3B-MegaScience) | 3B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| Qwen2.5-1.5B-MegaScience | [🤗 MegaScience/Qwen2.5-1.5B-MegaScience](https://huggingface.co/MegaScience/Qwen2.5-1.5B-MegaScience) | 1.5B | [apache-2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| Llama3.1-8B-MegaScience | [🤗 MegaScience/Llama3.1-8B-MegaScience](https://huggingface.co/MegaScience/Llama3.1-8B-MegaScience) | 8B | [llama3.1](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct/blob/main/LICENSE) |
+
+
 
 ## 🚀 Introduction
 
