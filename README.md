@@ -38,6 +38,8 @@ for Science Reasoning
 
 ## 🚀 Introduction
 
+![](./assets/main_figure.png)
+
 ## ⚙️ Data Process Pipeline
 
 ### Step 0. Install Environment
