@@ -8,7 +8,7 @@ for Science Reasoning
     
 [![arXiv](https://img.shields.io/badge/arXiv-2506.20512-red?style=for-the-badge&.svg)](https://arxiv.org/abs/2506.20512)
 [![HF Org (Model & Data)](https://img.shields.io/badge/HF_Org_(Data_&_Model)-5f16a8?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/MegaScience)
-[![Evaluation](https://img.shields.io/badge/Evaluation-black?style=for-the-badge&logo=github&logoColor=white&logoSize=30&link=https%3A%2F%2Fgithub.com%2FGAIR-NLP%2Flm-open-science-evaluation)]([https://huggingface.co/MegaScience](https://github.com/GAIR-NLP/lm-open-science-evaluation))
+[![Evaluation](https://img.shields.io/badge/Evaluation-black?style=for-the-badge&logo=github&logoColor=white&logoSize=30&link=https%3A%2F%2Fgithub.com%2FGAIR-NLP%2Flm-open-science-evaluation)](https://github.com/GAIR-NLP/lm-open-science-evaluation)
 
 </div>
 
