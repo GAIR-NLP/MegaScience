@@ -352,6 +352,6 @@ If you find this work useful, please cite:
   author={Fan, Run-Ze and Wang, Zengzhi and Liu, Pengfei},
   year={2025},
   journal={arXiv preprint arXiv:xxx},
-  url={https://arxiv.org/abs/xxx},
+  url={https://arxiv.org/abs/xxx}
 }
 ```
