@@ -6,7 +6,8 @@ Datasets for Science Reasoning
 
 <div align="center">
     
-[![arXiv](https://img.shields.io/badge/arXiv-2506.20512-red?style=for-the-badge&.svg)](https://arxiv.org/abs/2506.20512)
+[![arXiv](![Static Badge](https://img.shields.io/badge/ARXIV-2507.xxxxx-red?style=for-the-badge&logo=arxiv&logoColor=%23B31B1B&logoSize=30&labelColor=lightgrey&link=https%3A%2F%2Fgithub.com%2FGAIR-NLP%2FMegaScience)
+)](https://arxiv.org/abs/2507.xxx)
 [![HF Org (Model & Data)](https://img.shields.io/badge/HF%20Org%20(Data%20%26%20Model)-violet?style=for-the-badge&logo=huggingface&logoColor=%23FFD21E&logoSize=30&link=https%3A%2F%2Fhuggingface.co%2FMegaScience
 )](https://huggingface.co/MegaScience)
 [![Evaluation](https://img.shields.io/badge/Evaluation-black?style=for-the-badge&logo=github&logoColor=white&logoSize=30&link=https%3A%2F%2Fgithub.com%2FGAIR-NLP%2Flm-open-science-evaluation)](https://github.com/GAIR-NLP/lm-open-science-evaluation)
