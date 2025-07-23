@@ -353,7 +353,7 @@ If you find this work useful, please cite:
   title={MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning},
   author={Fan, Run-Ze and Wang, Zengzhi and Liu, Pengfei},
   year={2025},
-  journal={arXiv preprint arXiv:xxx},
-  url={https://arxiv.org/abs/xxx}
+  journal={arXiv preprint arXiv:2507.16812},
+  url={https://arxiv.org/abs/2507.16812}
 }
 ```
