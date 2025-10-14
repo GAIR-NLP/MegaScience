@@ -344,9 +344,10 @@ bash scripts/eval_science.sh <model_path>
 This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup](https://github.com/ChenghaoMou/text-dedup), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [OlympicArena](https://github.com/GAIR-NLP/OlympicArena), and [Language Model Open Science Evaluation](https://github.com/GAIR-NLP/lm-open-science-evaluation). Thanks for their wonderful works.
 
 ## 😋 Projects Using MegaScience
-- [Hybrid Reinforcement: When Reward Is Sparse, It's Better to Be Dense](https://arxiv.org/abs/2510.07242) [Meta]
+- [Hybrid Reinforcement: When Reward Is Sparse, It's Better to Be Dense](https://arxiv.org/abs/2510.07242)
 - [OpenRubrics: Towards Scalable Synthetic Rubric Generation for Reward Modeling and LLM Alignment](https://arxiv.org/abs/2510.07743)
 - [ARES: Multimodal Adaptive Reasoning via Difficulty-Aware Token-Level Entropy Shaping](https://arxiv.org/abs/2510.08457)
+- [Demystifying Reinforcement Learning in Agentic Reasoning](https://arxiv.org/abs/2510.11701)
 
 ## 🥳 Citation
 
