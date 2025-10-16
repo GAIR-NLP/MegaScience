@@ -348,6 +348,7 @@ This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup
 - [OpenRubrics: Towards Scalable Synthetic Rubric Generation for Reward Modeling and LLM Alignment](https://arxiv.org/abs/2510.07743)
 - [ARES: Multimodal Adaptive Reasoning via Difficulty-Aware Token-Level Entropy Shaping](https://arxiv.org/abs/2510.08457)
 - [Demystifying Reinforcement Learning in Agentic Reasoning](https://arxiv.org/abs/2510.11701)
+- [Scaling Code-Assisted Chain-of-Thoughts and Instructions for Model Reasoning](https://arxiv.org/abs/2510.04081)
 
 ## 🥳 Citation
 
