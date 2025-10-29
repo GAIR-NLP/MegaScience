@@ -349,6 +349,7 @@ This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup
 - [ARES: Multimodal Adaptive Reasoning via Difficulty-Aware Token-Level Entropy Shaping](https://arxiv.org/abs/2510.08457)
 - [Demystifying Reinforcement Learning in Agentic Reasoning](https://arxiv.org/abs/2510.11701)
 - [Scaling Code-Assisted Chain-of-Thoughts and Instructions for Model Reasoning](https://arxiv.org/abs/2510.04081)
+- [AgentFrontier: Expanding the Capability Frontier of LLM Agents with ZPD-Guided Data Synthesis](https://arxiv.org/abs/2510.24695)
 
 ## 🥳 Citation
 
