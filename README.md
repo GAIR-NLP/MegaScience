@@ -350,6 +350,8 @@ This repo benefits from [olmOCR](https://github.com/allenai/olmocr), [text-dedup
 - [Demystifying Reinforcement Learning in Agentic Reasoning](https://arxiv.org/abs/2510.11701)
 - [Scaling Code-Assisted Chain-of-Thoughts and Instructions for Model Reasoning](https://arxiv.org/abs/2510.04081)
 - [AgentFrontier: Expanding the Capability Frontier of LLM Agents with ZPD-Guided Data Synthesis](https://arxiv.org/abs/2510.24695)
+- [MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling](https://www.arxiv.org/abs/2511.11793)
+- [DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research](https://allenai.org/blog/dr-tulu)
 
 ## 🥳 Citation
 
