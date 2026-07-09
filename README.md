@@ -15,6 +15,7 @@ Datasets for Science Reasoning
 
 
 ## 🔥 News
+- **[2026-07-08]** MegaScience has been accepted by COLM 2026!
 - **[2025-07-23]** 🎉🎉🎉 We release our detailed technical report on [**arXiv**](https://arxiv.org/abs/2507.16812), datasets and models trained on MegaScience on [**HuggingFace**](https://huggingface.co/MegaScience), and evaluation system on [**Github**](https://github.com/GAIR-NLP/lm-open-science-evaluation).
 
 ## 💎 Resources
